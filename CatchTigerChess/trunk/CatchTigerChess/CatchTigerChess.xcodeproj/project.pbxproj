@@ -1,0 +1,794 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18A9A4651E37469D007C5DFA /* Chess.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A9A4431E37469C007C5DFA /* Chess.m */; };
+		18A9A46B1E37469D007C5DFA /* Chessboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A9A4501E37469C007C5DFA /* Chessboard.m */; };
+		18A9A46C1E37469D007C5DFA /* Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A9A4521E37469C007C5DFA /* Map.m */; };
+		18E10CB81E375B7900388E9F /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E10CB71E375B7900388E9F /* Player.m */; };
+		4750E91922C99DEC00D134BA /* PopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4750E91822C99DEC00D134BA /* PopView.m */; };
+		4750EA6522CDCB3800D134BA /* CSAFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 4750EA4422CDCB3800D134BA /* CSAFURLResponseSerialization.m */; };
+		4750EA6622CDCB3800D134BA /* CSAFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4750EA4622CDCB3800D134BA /* CSAFSecurityPolicy.m */; };
+		4750EA6722CDCB3800D134BA /* CSAFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4750EA4922CDCB3800D134BA /* CSAFNetworkReachabilityManager.m */; };
+		4750EA6822CDCB3800D134BA /* CSAFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4750EA4A22CDCB3800D134BA /* CSAFURLSessionManager.m */; };
+		4750EA6922CDCB3800D134BA /* CSAFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 4750EA4C22CDCB3800D134BA /* CSAFURLRequestSerialization.m */; };
+		4750EA6A22CDCB3800D134BA /* CSAFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4750EA4D22CDCB3800D134BA /* CSAFHTTPSessionManager.m */; };
+		4750EA6B22CDCB3800D134BA /* CSGKeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4750EA5222CDCB3800D134BA /* CSGKeychainItemWrapper.m */; };
+		4750EA6C22CDCB3800D134BA /* CSHttpUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4750EA5622CDCB3800D134BA /* CSHttpUtils.m */; };
+		4750EA6D22CDCB3800D134BA /* CSBaseMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 4750EA5922CDCB3800D134BA /* CSBaseMgr.m */; };
+		4750EA6E22CDCB3800D134BA /* CSGameUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4750EA5B22CDCB3800D134BA /* CSGameUtil.m */; };
+		4750EA6F22CDCB3800D134BA /* CSGameMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 4750EA5C22CDCB3800D134BA /* CSGameMgr.m */; };
+		4750EA7022CDCB3800D134BA /* CSGCommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4750EA5F22CDCB3800D134BA /* CSGCommonUtil.m */; };
+		4750EA7122CDCB3800D134BA /* SDKConf.json in Resources */ = {isa = PBXBuildFile; fileRef = 4750EA6022CDCB3800D134BA /* SDKConf.json */; };
+		4750EA7222CDCB3800D134BA /* CSGSDKConfModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4750EA6122CDCB3800D134BA /* CSGSDKConfModel.m */; };
+		47FA5FB822C340CD0067659F /* LanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FA5FB722C340CD0067659F /* LanViewController.m */; };
+		47FA5FE222C340D30067659F /* 规则.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FBA22C340D30067659F /* 规则.png */; };
+		47FA5FE322C340D30067659F /* 电脑对战.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FBB22C340D30067659F /* 电脑对战.png */; };
+		47FA5FE422C340D30067659F /* 确定.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FBC22C340D30067659F /* 确定.png */; };
+		47FA5FE522C340D30067659F /* 陷阱.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FBD22C340D30067659F /* 陷阱.png */; };
+		47FA5FE622C340D30067659F /* dbu.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FBE22C340D30067659F /* dbu.png */; };
+		47FA5FE722C340D30067659F /* zy.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FBF22C340D30067659F /* zy.png */; };
+		47FA5FE822C340D30067659F /* 下一步提示黄.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FC022C340D30067659F /* 下一步提示黄.png */; };
+		47FA5FE922C340D30067659F /* 老虎开始行动.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FC122C340D30067659F /* 老虎开始行动.png */; };
+		47FA5FEA22C340D30067659F /* 选择猎人.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FC222C340D30067659F /* 选择猎人.png */; };
+		47FA5FEB22C340D30067659F /* 老虎等待中.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FC322C340D30067659F /* 老虎等待中.png */; };
+		47FA5FEC22C340D30067659F /* 老虎(玩家)正在行动.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FC422C340D30067659F /* 老虎(玩家)正在行动.png */; };
+		47FA5FED22C340D30067659F /* 猎人(电脑)等待中.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FC522C340D30067659F /* 猎人(电脑)等待中.png */; };
+		47FA5FEE22C340D30067659F /* qcgg.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FC622C340D30067659F /* qcgg.png */; };
+		47FA5FEF22C340D30067659F /* 下一步提示.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FC722C340D30067659F /* 下一步提示.png */; };
+		47FA5FF022C340D30067659F /* 取消.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FC822C340D30067659F /* 取消.png */; };
+		47FA5FF122C340D30067659F /* 充值弹框.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FC922C340D30067659F /* 充值弹框.png */; };
+		47FA5FF222C340D30067659F /* 猎人开始行动.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FCA22C340D30067659F /* 猎人开始行动.png */; };
+		47FA5FF322C340D30067659F /* hu.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FCB22C340D30067659F /* hu.png */; };
+		47FA5FF422C340D30067659F /* 猎人胜利.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FCC22C340D30067659F /* 猎人胜利.png */; };
+		47FA5FF522C340D30067659F /* 老虎正在行动.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FCD22C340D30067659F /* 老虎正在行动.png */; };
+		47FA5FF622C340D30067659F /* 玩家对战.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FCE22C340D30067659F /* 玩家对战.png */; };
+		47FA5FF722C340D30067659F /* 棋盘.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FCF22C340D30067659F /* 棋盘.png */; };
+		47FA5FF822C340D30067659F /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FD022C340D30067659F /* help.png */; };
+		47FA5FF922C340D30067659F /* 犬.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FD122C340D30067659F /* 犬.png */; };
+		47FA5FFA22C340D30067659F /* hhgm.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FD222C340D30067659F /* hhgm.png */; };
+		47FA5FFB22C340D30067659F /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FD322C340D30067659F /* logo.png */; };
+		47FA5FFC22C340D30067659F /* sx.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FD422C340D30067659F /* sx.png */; };
+		47FA5FFD22C340D30067659F /* 内购弹框.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FD522C340D30067659F /* 内购弹框.png */; };
+		47FA5FFE22C340D30067659F /* g_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FD622C340D30067659F /* g_bg.png */; };
+		47FA5FFF22C340D30067659F /* 猎人(玩家)等待中.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FD722C340D30067659F /* 猎人(玩家)等待中.png */; };
+		47FA600022C340D30067659F /* 游戏开始请选择身份.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FD822C340D30067659F /* 游戏开始请选择身份.png */; };
+		47FA600122C340D30067659F /* 猎人(电脑)正在行动.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FD922C340D30067659F /* 猎人(电脑)正在行动.png */; };
+		47FA600222C340D30067659F /* 选择老虎.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FDA22C340D30067659F /* 选择老虎.png */; };
+		47FA600322C340D30067659F /* 登录图_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FDB22C340D30067659F /* 登录图_icon.png */; };
+		47FA600422C340D30067659F /* firstBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FDC22C340D30067659F /* firstBg.png */; };
+		47FA600522C340D30067659F /* 老虎胜利.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FDD22C340D30067659F /* 老虎胜利.png */; };
+		47FA600622C340D30067659F /* 老虎(玩)等待中.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FDE22C340D30067659F /* 老虎(玩)等待中.png */; };
+		47FA600722C340D30067659F /* 选择身份框.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FDF22C340D30067659F /* 选择身份框.png */; };
+		47FA600822C340D30067659F /* 猎人(玩家)正在行动.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FE022C340D30067659F /* 猎人(玩家)正在行动.png */; };
+		47FA600922C340D30067659F /* 引导手指.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA5FE122C340D30067659F /* 引导手指.png */; };
+		47FA600C22C3416A0067659F /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FA600A22C3416A0067659F /* UIView+Extension.m */; };
+		47FA601122C342840067659F /* Tiger.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FA600E22C342840067659F /* Tiger.m */; };
+		47FA601222C342840067659F /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FA601022C342840067659F /* Dog.m */; };
+		47FA60DC22C4613E0067659F /* SuccessFulView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FA60DB22C4613E0067659F /* SuccessFulView.m */; };
+		47FA60DF22C4BAB50067659F /* ComVSperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FA60DE22C4BAB50067659F /* ComVSperViewController.m */; };
+		47FA60E222C4C1B40067659F /* PvsPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FA60E122C4C1B40067659F /* PvsPViewController.m */; };
+		47FA60E522C4C4480067659F /* 犬选中_.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA60E322C4C4470067659F /* 犬选中_.png */; };
+		47FA60E622C4C4480067659F /* 老虎选中.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA60E422C4C4470067659F /* 老虎选中.png */; };
+		47FA60E922C4C5F30067659F /* RoleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FA60E822C4C5F30067659F /* RoleView.m */; };
+		47FA616C22C75E740067659F /* SKProduct+TXKProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FA616722C75E710067659F /* SKProduct+TXKProduct.m */; };
+		47FA616D22C75E740067659F /* txkProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FA616922C75E730067659F /* txkProgressHUD.m */; };
+		47FA616E22C75E740067659F /* TXKIAPMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FA616A22C75E730067659F /* TXKIAPMgr.m */; };
+		47FA617122C75EB00067659F /* KvIa.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA616F22C75EAF0067659F /* KvIa.png */; };
+		47FA617222C75EB00067659F /* wXL6.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FA617022C75EB00067659F /* wXL6.png */; };
+		4B8106D81C72F8A0004EE23E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8106D71C72F8A0004EE23E /* main.m */; };
+		4B8106DB1C72F8A0004EE23E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8106DA1C72F8A0004EE23E /* AppDelegate.m */; };
+		4B8106DE1C72F8A0004EE23E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8106DD1C72F8A0004EE23E /* BaseViewController.m */; };
+		4B8106E31C72F8A0004EE23E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B8106E21C72F8A0004EE23E /* Assets.xcassets */; };
+		4B8106E61C72F8A0004EE23E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B8106E41C72F8A0004EE23E /* LaunchScreen.storyboard */; };
+		4B8107181C731979004EE23E /* Chess+Move.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8107171C731979004EE23E /* Chess+Move.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C5F3BFAB9B0636867B0CCC1 /* libPods-CatchTigerChess.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CatchTigerChess.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A9A4421E37469C007C5DFA /* Chess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chess.h; sourceTree = "<group>"; };
+		18A9A4431E37469C007C5DFA /* Chess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chess.m; sourceTree = "<group>"; };
+		18A9A44F1E37469C007C5DFA /* Chessboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chessboard.h; sourceTree = "<group>"; };
+		18A9A4501E37469C007C5DFA /* Chessboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chessboard.m; sourceTree = "<group>"; };
+		18A9A4511E37469C007C5DFA /* Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Map.h; sourceTree = "<group>"; };
+		18A9A4521E37469C007C5DFA /* Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Map.m; sourceTree = "<group>"; };
+		18CE204F1E36EA6800BA57DB /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		18CE20501E36EB0500BA57DB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		18E10CB61E375B7900388E9F /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		18E10CB71E375B7900388E9F /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		4750E91722C99DEC00D134BA /* PopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopView.h; sourceTree = "<group>"; };
+		4750E91822C99DEC00D134BA /* PopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopView.m; sourceTree = "<group>"; };
+		4750EA4422CDCB3800D134BA /* CSAFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSAFURLResponseSerialization.m; sourceTree = "<group>"; };
+		4750EA4522CDCB3800D134BA /* CSAFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSAFURLSessionManager.h; sourceTree = "<group>"; };
+		4750EA4622CDCB3800D134BA /* CSAFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSAFSecurityPolicy.m; sourceTree = "<group>"; };
+		4750EA4722CDCB3800D134BA /* CSAFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSAFURLRequestSerialization.h; sourceTree = "<group>"; };
+		4750EA4822CDCB3800D134BA /* CSAFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSAFHTTPSessionManager.h; sourceTree = "<group>"; };
+		4750EA4922CDCB3800D134BA /* CSAFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSAFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		4750EA4A22CDCB3800D134BA /* CSAFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSAFURLSessionManager.m; sourceTree = "<group>"; };
+		4750EA4B22CDCB3800D134BA /* CSAFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSAFURLResponseSerialization.h; sourceTree = "<group>"; };
+		4750EA4C22CDCB3800D134BA /* CSAFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSAFURLRequestSerialization.m; sourceTree = "<group>"; };
+		4750EA4D22CDCB3800D134BA /* CSAFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSAFHTTPSessionManager.m; sourceTree = "<group>"; };
+		4750EA4E22CDCB3800D134BA /* CSAFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSAFSecurityPolicy.h; sourceTree = "<group>"; };
+		4750EA4F22CDCB3800D134BA /* CSAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSAFNetworking.h; sourceTree = "<group>"; };
+		4750EA5022CDCB3800D134BA /* CSAFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSAFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		4750EA5222CDCB3800D134BA /* CSGKeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSGKeychainItemWrapper.m; sourceTree = "<group>"; };
+		4750EA5322CDCB3800D134BA /* CSGKeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSGKeychainItemWrapper.h; sourceTree = "<group>"; };
+		4750EA5522CDCB3800D134BA /* CSHttpUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSHttpUtils.h; sourceTree = "<group>"; };
+		4750EA5622CDCB3800D134BA /* CSHttpUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSHttpUtils.m; sourceTree = "<group>"; };
+		4750EA5822CDCB3800D134BA /* CSGameUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSGameUtil.h; sourceTree = "<group>"; };
+		4750EA5922CDCB3800D134BA /* CSBaseMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSBaseMgr.m; sourceTree = "<group>"; };
+		4750EA5A22CDCB3800D134BA /* CSGameMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSGameMgr.h; sourceTree = "<group>"; };
+		4750EA5B22CDCB3800D134BA /* CSGameUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSGameUtil.m; sourceTree = "<group>"; };
+		4750EA5C22CDCB3800D134BA /* CSGameMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSGameMgr.m; sourceTree = "<group>"; };
+		4750EA5D22CDCB3800D134BA /* CSBaseMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSBaseMgr.h; sourceTree = "<group>"; };
+		4750EA5F22CDCB3800D134BA /* CSGCommonUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSGCommonUtil.m; sourceTree = "<group>"; };
+		4750EA6022CDCB3800D134BA /* SDKConf.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SDKConf.json; sourceTree = "<group>"; };
+		4750EA6122CDCB3800D134BA /* CSGSDKConfModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSGSDKConfModel.m; sourceTree = "<group>"; };
+		4750EA6222CDCB3800D134BA /* CSGCommonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSGCommonUtil.h; sourceTree = "<group>"; };
+		4750EA6322CDCB3800D134BA /* CSComm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSComm.h; sourceTree = "<group>"; };
+		4750EA6422CDCB3800D134BA /* CSGSDKConfModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSGSDKConfModel.h; sourceTree = "<group>"; };
+		47FA5FB622C340CC0067659F /* LanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanViewController.h; sourceTree = "<group>"; };
+		47FA5FB722C340CD0067659F /* LanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanViewController.m; sourceTree = "<group>"; };
+		47FA5FBA22C340D30067659F /* 规则.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "规则.png"; sourceTree = "<group>"; };
+		47FA5FBB22C340D30067659F /* 电脑对战.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "电脑对战.png"; sourceTree = "<group>"; };
+		47FA5FBC22C340D30067659F /* 确定.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "确定.png"; sourceTree = "<group>"; };
+		47FA5FBD22C340D30067659F /* 陷阱.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "陷阱.png"; sourceTree = "<group>"; };
+		47FA5FBE22C340D30067659F /* dbu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dbu.png; sourceTree = "<group>"; };
+		47FA5FBF22C340D30067659F /* zy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zy.png; sourceTree = "<group>"; };
+		47FA5FC022C340D30067659F /* 下一步提示黄.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "下一步提示黄.png"; sourceTree = "<group>"; };
+		47FA5FC122C340D30067659F /* 老虎开始行动.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "老虎开始行动.png"; sourceTree = "<group>"; };
+		47FA5FC222C340D30067659F /* 选择猎人.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "选择猎人.png"; sourceTree = "<group>"; };
+		47FA5FC322C340D30067659F /* 老虎等待中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "老虎等待中.png"; sourceTree = "<group>"; };
+		47FA5FC422C340D30067659F /* 老虎(玩家)正在行动.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "老虎(玩家)正在行动.png"; sourceTree = "<group>"; };
+		47FA5FC522C340D30067659F /* 猎人(电脑)等待中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "猎人(电脑)等待中.png"; sourceTree = "<group>"; };
+		47FA5FC622C340D30067659F /* qcgg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qcgg.png; sourceTree = "<group>"; };
+		47FA5FC722C340D30067659F /* 下一步提示.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "下一步提示.png"; sourceTree = "<group>"; };
+		47FA5FC822C340D30067659F /* 取消.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "取消.png"; sourceTree = "<group>"; };
+		47FA5FC922C340D30067659F /* 充值弹框.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "充值弹框.png"; sourceTree = "<group>"; };
+		47FA5FCA22C340D30067659F /* 猎人开始行动.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "猎人开始行动.png"; sourceTree = "<group>"; };
+		47FA5FCB22C340D30067659F /* hu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hu.png; sourceTree = "<group>"; };
+		47FA5FCC22C340D30067659F /* 猎人胜利.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "猎人胜利.png"; sourceTree = "<group>"; };
+		47FA5FCD22C340D30067659F /* 老虎正在行动.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "老虎正在行动.png"; sourceTree = "<group>"; };
+		47FA5FCE22C340D30067659F /* 玩家对战.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "玩家对战.png"; sourceTree = "<group>"; };
+		47FA5FCF22C340D30067659F /* 棋盘.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "棋盘.png"; sourceTree = "<group>"; };
+		47FA5FD022C340D30067659F /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
+		47FA5FD122C340D30067659F /* 犬.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "犬.png"; sourceTree = "<group>"; };
+		47FA5FD222C340D30067659F /* hhgm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hhgm.png; sourceTree = "<group>"; };
+		47FA5FD322C340D30067659F /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		47FA5FD422C340D30067659F /* sx.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sx.png; sourceTree = "<group>"; };
+		47FA5FD522C340D30067659F /* 内购弹框.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "内购弹框.png"; sourceTree = "<group>"; };
+		47FA5FD622C340D30067659F /* g_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = g_bg.png; sourceTree = "<group>"; };
+		47FA5FD722C340D30067659F /* 猎人(玩家)等待中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "猎人(玩家)等待中.png"; sourceTree = "<group>"; };
+		47FA5FD822C340D30067659F /* 游戏开始请选择身份.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "游戏开始请选择身份.png"; sourceTree = "<group>"; };
+		47FA5FD922C340D30067659F /* 猎人(电脑)正在行动.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "猎人(电脑)正在行动.png"; sourceTree = "<group>"; };
+		47FA5FDA22C340D30067659F /* 选择老虎.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "选择老虎.png"; sourceTree = "<group>"; };
+		47FA5FDB22C340D30067659F /* 登录图_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登录图_icon.png"; sourceTree = "<group>"; };
+		47FA5FDC22C340D30067659F /* firstBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = firstBg.png; sourceTree = "<group>"; };
+		47FA5FDD22C340D30067659F /* 老虎胜利.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "老虎胜利.png"; sourceTree = "<group>"; };
+		47FA5FDE22C340D30067659F /* 老虎(玩)等待中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "老虎(玩)等待中.png"; sourceTree = "<group>"; };
+		47FA5FDF22C340D30067659F /* 选择身份框.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "选择身份框.png"; sourceTree = "<group>"; };
+		47FA5FE022C340D30067659F /* 猎人(玩家)正在行动.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "猎人(玩家)正在行动.png"; sourceTree = "<group>"; };
+		47FA5FE122C340D30067659F /* 引导手指.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "引导手指.png"; sourceTree = "<group>"; };
+		47FA600A22C3416A0067659F /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		47FA600B22C3416A0067659F /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		47FA600D22C342840067659F /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		47FA600E22C342840067659F /* Tiger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tiger.m; sourceTree = "<group>"; };
+		47FA600F22C342840067659F /* Tiger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tiger.h; sourceTree = "<group>"; };
+		47FA601022C342840067659F /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		47FA60DA22C4613E0067659F /* SuccessFulView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuccessFulView.h; sourceTree = "<group>"; };
+		47FA60DB22C4613E0067659F /* SuccessFulView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuccessFulView.m; sourceTree = "<group>"; };
+		47FA60DD22C4BAB50067659F /* ComVSperViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComVSperViewController.h; sourceTree = "<group>"; };
+		47FA60DE22C4BAB50067659F /* ComVSperViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComVSperViewController.m; sourceTree = "<group>"; };
+		47FA60E022C4C1B40067659F /* PvsPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PvsPViewController.h; sourceTree = "<group>"; };
+		47FA60E122C4C1B40067659F /* PvsPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PvsPViewController.m; sourceTree = "<group>"; };
+		47FA60E322C4C4470067659F /* 犬选中_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "犬选中_.png"; sourceTree = "<group>"; };
+		47FA60E422C4C4470067659F /* 老虎选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "老虎选中.png"; sourceTree = "<group>"; };
+		47FA60E722C4C5F30067659F /* RoleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoleView.h; sourceTree = "<group>"; };
+		47FA60E822C4C5F30067659F /* RoleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoleView.m; sourceTree = "<group>"; };
+		47FA616622C75E700067659F /* txkProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = txkProgressHUD.h; sourceTree = "<group>"; };
+		47FA616722C75E710067659F /* SKProduct+TXKProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKProduct+TXKProduct.m"; sourceTree = "<group>"; };
+		47FA616822C75E720067659F /* TXKIAPMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXKIAPMgr.h; sourceTree = "<group>"; };
+		47FA616922C75E730067659F /* txkProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = txkProgressHUD.m; sourceTree = "<group>"; };
+		47FA616A22C75E730067659F /* TXKIAPMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXKIAPMgr.m; sourceTree = "<group>"; };
+		47FA616B22C75E740067659F /* SKProduct+TXKProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKProduct+TXKProduct.h"; sourceTree = "<group>"; };
+		47FA616F22C75EAF0067659F /* KvIa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KvIa.png; sourceTree = "<group>"; };
+		47FA617022C75EB00067659F /* wXL6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wXL6.png; sourceTree = "<group>"; };
+		4B8106D31C72F8A0004EE23E /* CatchTigerChess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatchTigerChess.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B8106D71C72F8A0004EE23E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4B8106D91C72F8A0004EE23E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4B8106DA1C72F8A0004EE23E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4B8106DC1C72F8A0004EE23E /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		4B8106DD1C72F8A0004EE23E /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		4B8106E21C72F8A0004EE23E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B8106E51C72F8A0004EE23E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4B8106E71C72F8A0004EE23E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B8107161C731979004EE23E /* Chess+Move.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Chess+Move.h"; sourceTree = "<group>"; };
+		4B8107171C731979004EE23E /* Chess+Move.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Chess+Move.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B8106D01C72F8A0004EE23E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18A9A43C1E37469C007C5DFA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4750E91622C99AB900D134BA /* mai */,
+				4750EA7322CDCB6700D134BA /* main */,
+				4750EA5422CDCB3800D134BA /* http */,
+				4750EA4222CDCB3800D134BA /* libs */,
+				4750EA5722CDCB3800D134BA /* Manager */,
+				4750EA5E22CDCB3800D134BA /* model */,
+				47FA5FB922C340D30067659F /* res */,
+				18E10CB51E375B6500388E9F /* Player */,
+				18A9A43D1E37469C007C5DFA /* Chess */,
+				18A9A44E1E37469C007C5DFA /* Map */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		18A9A43D1E37469C007C5DFA /* Chess */ = {
+			isa = PBXGroup;
+			children = (
+				4B8107161C731979004EE23E /* Chess+Move.h */,
+				4B8107171C731979004EE23E /* Chess+Move.m */,
+				18A9A4421E37469C007C5DFA /* Chess.h */,
+				18A9A4431E37469C007C5DFA /* Chess.m */,
+				47FA600D22C342840067659F /* Dog.h */,
+				47FA601022C342840067659F /* Dog.m */,
+				47FA600F22C342840067659F /* Tiger.h */,
+				47FA600E22C342840067659F /* Tiger.m */,
+			);
+			path = Chess;
+			sourceTree = "<group>";
+		};
+		18A9A44E1E37469C007C5DFA /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				18A9A44F1E37469C007C5DFA /* Chessboard.h */,
+				18A9A4501E37469C007C5DFA /* Chessboard.m */,
+				18A9A4511E37469C007C5DFA /* Map.h */,
+				18A9A4521E37469C007C5DFA /* Map.m */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		18E10CB51E375B6500388E9F /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				18E10CB61E375B7900388E9F /* Player.h */,
+				18E10CB71E375B7900388E9F /* Player.m */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		4750E91622C99AB900D134BA /* mai */ = {
+			isa = PBXGroup;
+			children = (
+				47FA616F22C75EAF0067659F /* KvIa.png */,
+				47FA617022C75EB00067659F /* wXL6.png */,
+				47FA616B22C75E740067659F /* SKProduct+TXKProduct.h */,
+				47FA616722C75E710067659F /* SKProduct+TXKProduct.m */,
+				47FA616822C75E720067659F /* TXKIAPMgr.h */,
+				47FA616A22C75E730067659F /* TXKIAPMgr.m */,
+				47FA616622C75E700067659F /* txkProgressHUD.h */,
+				47FA616922C75E730067659F /* txkProgressHUD.m */,
+			);
+			path = mai;
+			sourceTree = "<group>";
+		};
+		4750EA4222CDCB3800D134BA /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				4750EA4322CDCB3800D134BA /* AFNetworking */,
+				4750EA5122CDCB3800D134BA /* UICKeyChainStore */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		4750EA4322CDCB3800D134BA /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				4750EA4422CDCB3800D134BA /* CSAFURLResponseSerialization.m */,
+				4750EA4522CDCB3800D134BA /* CSAFURLSessionManager.h */,
+				4750EA4622CDCB3800D134BA /* CSAFSecurityPolicy.m */,
+				4750EA4722CDCB3800D134BA /* CSAFURLRequestSerialization.h */,
+				4750EA4822CDCB3800D134BA /* CSAFHTTPSessionManager.h */,
+				4750EA4922CDCB3800D134BA /* CSAFNetworkReachabilityManager.m */,
+				4750EA4A22CDCB3800D134BA /* CSAFURLSessionManager.m */,
+				4750EA4B22CDCB3800D134BA /* CSAFURLResponseSerialization.h */,
+				4750EA4C22CDCB3800D134BA /* CSAFURLRequestSerialization.m */,
+				4750EA4D22CDCB3800D134BA /* CSAFHTTPSessionManager.m */,
+				4750EA4E22CDCB3800D134BA /* CSAFSecurityPolicy.h */,
+				4750EA4F22CDCB3800D134BA /* CSAFNetworking.h */,
+				4750EA5022CDCB3800D134BA /* CSAFNetworkReachabilityManager.h */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		4750EA5122CDCB3800D134BA /* UICKeyChainStore */ = {
+			isa = PBXGroup;
+			children = (
+				4750EA5222CDCB3800D134BA /* CSGKeychainItemWrapper.m */,
+				4750EA5322CDCB3800D134BA /* CSGKeychainItemWrapper.h */,
+			);
+			path = UICKeyChainStore;
+			sourceTree = "<group>";
+		};
+		4750EA5422CDCB3800D134BA /* http */ = {
+			isa = PBXGroup;
+			children = (
+				4750EA5522CDCB3800D134BA /* CSHttpUtils.h */,
+				4750EA5622CDCB3800D134BA /* CSHttpUtils.m */,
+			);
+			path = http;
+			sourceTree = "<group>";
+		};
+		4750EA5722CDCB3800D134BA /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4750EA5822CDCB3800D134BA /* CSGameUtil.h */,
+				4750EA5922CDCB3800D134BA /* CSBaseMgr.m */,
+				4750EA5A22CDCB3800D134BA /* CSGameMgr.h */,
+				4750EA5B22CDCB3800D134BA /* CSGameUtil.m */,
+				4750EA5C22CDCB3800D134BA /* CSGameMgr.m */,
+				4750EA5D22CDCB3800D134BA /* CSBaseMgr.h */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		4750EA5E22CDCB3800D134BA /* model */ = {
+			isa = PBXGroup;
+			children = (
+				4750EA5F22CDCB3800D134BA /* CSGCommonUtil.m */,
+				4750EA6022CDCB3800D134BA /* SDKConf.json */,
+				4750EA6122CDCB3800D134BA /* CSGSDKConfModel.m */,
+				4750EA6222CDCB3800D134BA /* CSGCommonUtil.h */,
+				4750EA6322CDCB3800D134BA /* CSComm.h */,
+				4750EA6422CDCB3800D134BA /* CSGSDKConfModel.h */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		4750EA7322CDCB6700D134BA /* main */ = {
+			isa = PBXGroup;
+			children = (
+				18CE20501E36EB0500BA57DB /* PrefixHeader.pch */,
+				18CE204F1E36EA6800BA57DB /* Singleton.h */,
+				47FA5FB622C340CC0067659F /* LanViewController.h */,
+				47FA5FB722C340CD0067659F /* LanViewController.m */,
+				4B8106DC1C72F8A0004EE23E /* BaseViewController.h */,
+				4B8106DD1C72F8A0004EE23E /* BaseViewController.m */,
+				47FA60E022C4C1B40067659F /* PvsPViewController.h */,
+				47FA60E122C4C1B40067659F /* PvsPViewController.m */,
+				47FA60DD22C4BAB50067659F /* ComVSperViewController.h */,
+				47FA60DE22C4BAB50067659F /* ComVSperViewController.m */,
+				47FA600B22C3416A0067659F /* UIView+Extension.h */,
+				47FA600A22C3416A0067659F /* UIView+Extension.m */,
+				47FA60DA22C4613E0067659F /* SuccessFulView.h */,
+				47FA60DB22C4613E0067659F /* SuccessFulView.m */,
+				47FA60E722C4C5F30067659F /* RoleView.h */,
+				47FA60E822C4C5F30067659F /* RoleView.m */,
+				4750E91722C99DEC00D134BA /* PopView.h */,
+				4750E91822C99DEC00D134BA /* PopView.m */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		47FA5FB922C340D30067659F /* res */ = {
+			isa = PBXGroup;
+			children = (
+				47FA60E422C4C4470067659F /* 老虎选中.png */,
+				47FA60E322C4C4470067659F /* 犬选中_.png */,
+				47FA5FBA22C340D30067659F /* 规则.png */,
+				47FA5FBB22C340D30067659F /* 电脑对战.png */,
+				47FA5FBC22C340D30067659F /* 确定.png */,
+				47FA5FBD22C340D30067659F /* 陷阱.png */,
+				47FA5FBE22C340D30067659F /* dbu.png */,
+				47FA5FBF22C340D30067659F /* zy.png */,
+				47FA5FC022C340D30067659F /* 下一步提示黄.png */,
+				47FA5FC122C340D30067659F /* 老虎开始行动.png */,
+				47FA5FC222C340D30067659F /* 选择猎人.png */,
+				47FA5FC622C340D30067659F /* qcgg.png */,
+				47FA5FC722C340D30067659F /* 下一步提示.png */,
+				47FA5FC822C340D30067659F /* 取消.png */,
+				47FA5FC922C340D30067659F /* 充值弹框.png */,
+				47FA5FCA22C340D30067659F /* 猎人开始行动.png */,
+				47FA5FCB22C340D30067659F /* hu.png */,
+				47FA5FCC22C340D30067659F /* 猎人胜利.png */,
+				47FA5FCE22C340D30067659F /* 玩家对战.png */,
+				47FA5FCF22C340D30067659F /* 棋盘.png */,
+				47FA5FD022C340D30067659F /* help.png */,
+				47FA5FD122C340D30067659F /* 犬.png */,
+				47FA5FD222C340D30067659F /* hhgm.png */,
+				47FA5FD322C340D30067659F /* logo.png */,
+				47FA5FD422C340D30067659F /* sx.png */,
+				47FA5FD522C340D30067659F /* 内购弹框.png */,
+				47FA5FD622C340D30067659F /* g_bg.png */,
+				47FA5FD722C340D30067659F /* 猎人(玩家)等待中.png */,
+				47FA5FC522C340D30067659F /* 猎人(电脑)等待中.png */,
+				47FA5FD922C340D30067659F /* 猎人(电脑)正在行动.png */,
+				47FA5FE022C340D30067659F /* 猎人(玩家)正在行动.png */,
+				47FA5FCD22C340D30067659F /* 老虎正在行动.png */,
+				47FA5FC422C340D30067659F /* 老虎(玩家)正在行动.png */,
+				47FA5FC322C340D30067659F /* 老虎等待中.png */,
+				47FA5FDA22C340D30067659F /* 选择老虎.png */,
+				47FA5FDB22C340D30067659F /* 登录图_icon.png */,
+				47FA5FDC22C340D30067659F /* firstBg.png */,
+				47FA5FD822C340D30067659F /* 游戏开始请选择身份.png */,
+				47FA5FDD22C340D30067659F /* 老虎胜利.png */,
+				47FA5FDE22C340D30067659F /* 老虎(玩)等待中.png */,
+				47FA5FDF22C340D30067659F /* 选择身份框.png */,
+				47FA5FE122C340D30067659F /* 引导手指.png */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		4B8106CA1C72F8A0004EE23E = {
+			isa = PBXGroup;
+			children = (
+				4B8106D51C72F8A0004EE23E /* CatchTigerChess */,
+				4B8106D41C72F8A0004EE23E /* Products */,
+				F2CC6C456753A581CD0AC208 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4B8106D41C72F8A0004EE23E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B8106D31C72F8A0004EE23E /* CatchTigerChess.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B8106D51C72F8A0004EE23E /* CatchTigerChess */ = {
+			isa = PBXGroup;
+			children = (
+				18A9A43C1E37469C007C5DFA /* Classes */,
+				4B8106D61C72F8A0004EE23E /* Supporting Files */,
+			);
+			path = CatchTigerChess;
+			sourceTree = "<group>";
+		};
+		4B8106D61C72F8A0004EE23E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4B8106D91C72F8A0004EE23E /* AppDelegate.h */,
+				4B8106DA1C72F8A0004EE23E /* AppDelegate.m */,
+				4B8106E21C72F8A0004EE23E /* Assets.xcassets */,
+				4B8106E41C72F8A0004EE23E /* LaunchScreen.storyboard */,
+				4B8106E71C72F8A0004EE23E /* Info.plist */,
+				4B8106D71C72F8A0004EE23E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F2CC6C456753A581CD0AC208 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C5F3BFAB9B0636867B0CCC1 /* libPods-CatchTigerChess.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B8106D21C72F8A0004EE23E /* CatchTigerChess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B8107001C72F8A0004EE23E /* Build configuration list for PBXNativeTarget "CatchTigerChess" */;
+			buildPhases = (
+				4B8106CF1C72F8A0004EE23E /* Sources */,
+				4B8106D01C72F8A0004EE23E /* Frameworks */,
+				4B8106D11C72F8A0004EE23E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CatchTigerChess;
+			productName = CatchTigerChess;
+			productReference = 4B8106D31C72F8A0004EE23E /* CatchTigerChess.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B8106CB1C72F8A0004EE23E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = wzx;
+				TargetAttributes = {
+					4B8106D21C72F8A0004EE23E = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 554YJUURSL;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 4B8106CE1C72F8A0004EE23E /* Build configuration list for PBXProject "CatchTigerChess" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 4B8106CA1C72F8A0004EE23E;
+			productRefGroup = 4B8106D41C72F8A0004EE23E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B8106D21C72F8A0004EE23E /* CatchTigerChess */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B8106D11C72F8A0004EE23E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47FA60E622C4C4480067659F /* 老虎选中.png in Resources */,
+				47FA5FE822C340D30067659F /* 下一步提示黄.png in Resources */,
+				47FA5FF422C340D30067659F /* 猎人胜利.png in Resources */,
+				47FA5FFA22C340D30067659F /* hhgm.png in Resources */,
+				47FA5FE422C340D30067659F /* 确定.png in Resources */,
+				47FA5FFB22C340D30067659F /* logo.png in Resources */,
+				47FA5FF522C340D30067659F /* 老虎正在行动.png in Resources */,
+				47FA5FEB22C340D30067659F /* 老虎等待中.png in Resources */,
+				47FA5FE522C340D30067659F /* 陷阱.png in Resources */,
+				47FA600022C340D30067659F /* 游戏开始请选择身份.png in Resources */,
+				47FA600322C340D30067659F /* 登录图_icon.png in Resources */,
+				47FA5FF822C340D30067659F /* help.png in Resources */,
+				47FA5FFC22C340D30067659F /* sx.png in Resources */,
+				47FA5FF222C340D30067659F /* 猎人开始行动.png in Resources */,
+				47FA5FE922C340D30067659F /* 老虎开始行动.png in Resources */,
+				47FA5FE622C340D30067659F /* dbu.png in Resources */,
+				47FA5FEF22C340D30067659F /* 下一步提示.png in Resources */,
+				47FA600122C340D30067659F /* 猎人(电脑)正在行动.png in Resources */,
+				47FA5FED22C340D30067659F /* 猎人(电脑)等待中.png in Resources */,
+				47FA600622C340D30067659F /* 老虎(玩)等待中.png in Resources */,
+				47FA5FF922C340D30067659F /* 犬.png in Resources */,
+				47FA600922C340D30067659F /* 引导手指.png in Resources */,
+				4750EA7122CDCB3800D134BA /* SDKConf.json in Resources */,
+				47FA60E522C4C4480067659F /* 犬选中_.png in Resources */,
+				47FA600722C340D30067659F /* 选择身份框.png in Resources */,
+				47FA600422C340D30067659F /* firstBg.png in Resources */,
+				47FA600222C340D30067659F /* 选择老虎.png in Resources */,
+				47FA5FE222C340D30067659F /* 规则.png in Resources */,
+				47FA617122C75EB00067659F /* KvIa.png in Resources */,
+				47FA5FF322C340D30067659F /* hu.png in Resources */,
+				47FA5FFE22C340D30067659F /* g_bg.png in Resources */,
+				47FA5FFF22C340D30067659F /* 猎人(玩家)等待中.png in Resources */,
+				47FA5FF022C340D30067659F /* 取消.png in Resources */,
+				47FA617222C75EB00067659F /* wXL6.png in Resources */,
+				47FA5FEC22C340D30067659F /* 老虎(玩家)正在行动.png in Resources */,
+				47FA600822C340D30067659F /* 猎人(玩家)正在行动.png in Resources */,
+				47FA600522C340D30067659F /* 老虎胜利.png in Resources */,
+				47FA5FF122C340D30067659F /* 充值弹框.png in Resources */,
+				47FA5FEA22C340D30067659F /* 选择猎人.png in Resources */,
+				47FA5FF622C340D30067659F /* 玩家对战.png in Resources */,
+				47FA5FE722C340D30067659F /* zy.png in Resources */,
+				47FA5FEE22C340D30067659F /* qcgg.png in Resources */,
+				47FA5FF722C340D30067659F /* 棋盘.png in Resources */,
+				4B8106E61C72F8A0004EE23E /* LaunchScreen.storyboard in Resources */,
+				47FA5FE322C340D30067659F /* 电脑对战.png in Resources */,
+				47FA5FFD22C340D30067659F /* 内购弹框.png in Resources */,
+				4B8106E31C72F8A0004EE23E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B8106CF1C72F8A0004EE23E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47FA601122C342840067659F /* Tiger.m in Sources */,
+				4750EA7222CDCB3800D134BA /* CSGSDKConfModel.m in Sources */,
+				18A9A4651E37469D007C5DFA /* Chess.m in Sources */,
+				4750EA6722CDCB3800D134BA /* CSAFNetworkReachabilityManager.m in Sources */,
+				4750EA6E22CDCB3800D134BA /* CSGameUtil.m in Sources */,
+				4750EA6622CDCB3800D134BA /* CSAFSecurityPolicy.m in Sources */,
+				47FA60E922C4C5F30067659F /* RoleView.m in Sources */,
+				47FA60E222C4C1B40067659F /* PvsPViewController.m in Sources */,
+				4B8106DE1C72F8A0004EE23E /* BaseViewController.m in Sources */,
+				47FA60DC22C4613E0067659F /* SuccessFulView.m in Sources */,
+				4750EA6922CDCB3800D134BA /* CSAFURLRequestSerialization.m in Sources */,
+				47FA600C22C3416A0067659F /* UIView+Extension.m in Sources */,
+				4B8106DB1C72F8A0004EE23E /* AppDelegate.m in Sources */,
+				47FA5FB822C340CD0067659F /* LanViewController.m in Sources */,
+				4B8106D81C72F8A0004EE23E /* main.m in Sources */,
+				4750EA7022CDCB3800D134BA /* CSGCommonUtil.m in Sources */,
+				47FA616E22C75E740067659F /* TXKIAPMgr.m in Sources */,
+				47FA616C22C75E740067659F /* SKProduct+TXKProduct.m in Sources */,
+				18E10CB81E375B7900388E9F /* Player.m in Sources */,
+				4750EA6D22CDCB3800D134BA /* CSBaseMgr.m in Sources */,
+				4750EA6F22CDCB3800D134BA /* CSGameMgr.m in Sources */,
+				47FA601222C342840067659F /* Dog.m in Sources */,
+				4750EA6B22CDCB3800D134BA /* CSGKeychainItemWrapper.m in Sources */,
+				4750EA6A22CDCB3800D134BA /* CSAFHTTPSessionManager.m in Sources */,
+				4750EA6C22CDCB3800D134BA /* CSHttpUtils.m in Sources */,
+				4750E91922C99DEC00D134BA /* PopView.m in Sources */,
+				4750EA6822CDCB3800D134BA /* CSAFURLSessionManager.m in Sources */,
+				18A9A46C1E37469D007C5DFA /* Map.m in Sources */,
+				47FA616D22C75E740067659F /* txkProgressHUD.m in Sources */,
+				18A9A46B1E37469D007C5DFA /* Chessboard.m in Sources */,
+				4B8107181C731979004EE23E /* Chess+Move.m in Sources */,
+				4750EA6522CDCB3800D134BA /* CSAFURLResponseSerialization.m in Sources */,
+				47FA60DF22C4BAB50067659F /* ComVSperViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4B8106E41C72F8A0004EE23E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B8106E51C72F8A0004EE23E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B8106FE1C72F8A0004EE23E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4B8106FF1C72F8A0004EE23E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B8107011C72F8A0004EE23E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 554YJUURSL;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CatchTigerChess/Classes/main/PrefixHeader.pch;
+				INFOPLIST_FILE = CatchTigerChess/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qecd.jyjm.oakc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = fksai_dev;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B8107021C72F8A0004EE23E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 554YJUURSL;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CatchTigerChess/Classes/main/PrefixHeader.pch;
+				INFOPLIST_FILE = CatchTigerChess/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qecd.jyjm.oakc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = fksai_adhoc;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B8106CE1C72F8A0004EE23E /* Build configuration list for PBXProject "CatchTigerChess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B8106FE1C72F8A0004EE23E /* Debug */,
+				4B8106FF1C72F8A0004EE23E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B8107001C72F8A0004EE23E /* Build configuration list for PBXNativeTarget "CatchTigerChess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B8107011C72F8A0004EE23E /* Debug */,
+				4B8107021C72F8A0004EE23E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B8106CB1C72F8A0004EE23E /* Project object */;
+}
